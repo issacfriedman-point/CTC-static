@@ -1,7 +1,7 @@
 html,
 body {
-    overflow-x: hidden;
-} 
+  overflow-x: hidden;
+}
 
 body {
   font-size: 16px;
@@ -1714,8 +1714,8 @@ div.extra_cmn_ruler {
 }
 
 .wy_ctc_sec_col_inner .main_img .anim_lote svg {
-  width: 48px!important;
-  height: 48px!important;
+  width: 48px !important;
+  height: 48px !important;
 }
 
 .wy_ctc_sec_col_inner_btm h5 {
@@ -3070,7 +3070,7 @@ input[type="submit"].nws-subbtn:hover {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-}
+  }
 }
 @keyframes beat {
   to {
@@ -3083,12 +3083,20 @@ input[type="submit"].nws-subbtn:hover {
 }
 
 @-webkit-keyframes blinker {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 @keyframes blinker {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .stroke_svg_circle {
@@ -3100,8 +3108,8 @@ input[type="submit"].nws-subbtn:hover {
   */
   -webkit-animation-name: blinker;
   -webkit-animation-duration: 0.6s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-direction: alternate;
 }
 
@@ -3187,11 +3195,11 @@ input[type="submit"].nws-subbtn:hover {
 }
 
 .calendly-overlay {
-  z-index: 9999999999!important;
+  z-index: 9999999999 !important;
 }
 
 .modal {
-  z-index: 9999999999!important;
+  z-index: 9999999999 !important;
 }
 
 .data_info {
@@ -3246,7 +3254,7 @@ input[type="submit"].nws-subbtn:hover {
 }
 
 .faq-sec table th {
-  border: 1px solid rgba(255,255,255,0.17);
+  border: 1px solid rgba(255, 255, 255, 0.17);
   font-weight: 800;
 }
 
@@ -3265,7 +3273,6 @@ input[type="submit"].nws-subbtn:hover {
   /* height: 0!important;
   display: block!important;
   visibility: hidden; */
-
 }
 
 .general-content ul {
@@ -3922,17 +3929,17 @@ input[type="submit"].nws-subbtn:hover {
   .minding_business_sec_tab_top ul li {
     flex-basis: 50%;
     max-width: 50%;
-    border-bottom: 1px solid #e0dfeb!important;
+    border-bottom: 1px solid #e0dfeb !important;
   }
 
   .minding_business_sec_tab_top ul li:nth-child(2) {
-    border-right: none!important;
+    border-right: none !important;
   }
- 
+
   .minding_business_sec_tab_top ul li:nth-child(3) {
     flex-basis: 100%;
     max-width: 100%;
-    border-bottom: none!important;
+    border-bottom: none !important;
   }
 }
 
@@ -3948,7 +3955,7 @@ input[type="submit"].nws-subbtn:hover {
     pointer-events: none;
   }
   .resp-tab-content {
-    display: block!important;
+    display: block !important;
   }
   .minding_business_sec_tab_top {
     display: none;
@@ -3990,7 +3997,7 @@ input[type="submit"].nws-subbtn:hover {
     margin-bottom: 10px;
   }
   .order_online_gnrl_sc_col_lft .sec_heading_sml_top h3 {
-     display: none;
+    display: none;
   }
   .order_online_gnrl_sc_col_lft .sec_heading_sml_top {
     margin-bottom: 22px;
@@ -4602,4 +4609,12 @@ input[type="submit"].nws-subbtn:hover {
   .banner_imgs_anim_parent_wrap2 .icond3 {
     bottom: 17%;
   }
+}
+/* temp fix to add back the default cursor and remove the dot cursor without touching the js files  */
+
+body {
+  cursor: default !important;
+}
+.cb-cursor {
+  display: none !important;
 }
